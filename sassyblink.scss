@@ -1,0 +1,15 @@
+
+@mixin sassyblink($element, $cycleTime) {
+  $element {
+    -webkit-animation: blinking $cycleTime step-end infinite alternate;
+    animation: blinking $cycleTime step-end infinite alternate;
+  }
+  @-webkit-keyframes blinking {
+    0% {
+      visibility: visible;
+    }
+    50% {
+    visibility: hidden;
+    }
+  }
+}
